@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Watall</title>
+  <!-- Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Landing page template for creative dashboard">
+  <meta name="keywords" content="Landing page template">
+  <!-- Favicon icon -->
+  <link async rel="icon" href="assets/logos/favicon.ico" type="image/png" sizes="16x16">
+  <!-- Bootstrap -->
+  <link def href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- Font -->
+  <link async href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="preconnect"">
+  <link async href=" https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="preconnect"" type=" text/css">
+  <!-- Animate CSS -->
+  <link async rel="stylesheet" href="assets/css/animate.css">
+  <!-- Owl Carousel -->
+  <link async rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link async rel="stylesheet" href="assets/css/owl.theme.css">
+  <!-- Magnific Popup -->
+  <link async rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- Full Page Animation -->
+  <link async rel="stylesheet" href="assets/css/animsition.min.css">
+  <!-- Ionic Icons -->
+  <link async rel="stylesheet" href="assets/css/ionicons.min.css">
+  <!-- Main Style css -->
+  <link async href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link async href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link async href="assets/css/viewport-fontsize.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- <script async src="https://www.google.com/recaptcha/api.js"></script> -->
+  <style>
+    .cus-fade-in-out span.parent_hover-show {
+      display: none;
+      font-size: -160px;
+      transition: all ease-in-out .5s;
+    }
+
+    *:hover>.cus-fade-in-out span.parent_hover-show {
+      display: inline-block;
+      font-size: 16px;
+      transition: all ease-in-out .5s;
+    }
+
+    *:hover>.cus-fade-in-out {
+      border-radius: 6px !important;
+      transition: all ease-in-out .25s;
+    }
+
+    .form-control-shodow>.form-control,
+    .row.form-control-shodow>*>.form-control {
+      -webkit-box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.3), 0 1px 3px 1px rgba(255, 255, 255, 0.15);
+      box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    }
+
+    .box-shadow-none,
+    .box-shadow-hover-none:hover {
+      box-shadow: none;
+    }
+
+    /* *:hover>*>.services-content,  */
+    #industries *:hover>.card {
+      border-radius: 6px;
+      box-shadow: 0px 2px 4px -2px rgb(0 0 0 / 50%);
+      transition-property: box-shadow;
+      transition: ease .5s;
+    }
+
+    .industries-served img {
+      width: 50%;
+    }
+
+    /* *:hover>*>.services-content,  */
+    #industries *:hover>.card {
+      border-radius: 6px;
+      box-shadow: 0px 2px 4px -2px rgb(0 0 0 / 50%);
+      transition-property: box-shadow;
+      transition: ease .5s;
+    }
+
+    #industries .services-content p.text {
+      background-color: rgba(0, 0, 0, .125);
+      color: black;
+      margin: 1rem 0 0 0;
+      font-size: 12px !important;
+    }
+
+    .industries-served p {
+      line-height: 20px;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+
+    .glassmorphism {
+      background-color: rgba(255, 255, 255, 0.55) !important;
+      /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important; */
+      backdrop-filter: blur(4px) !important;
+      -webkit-backdrop-filter: blur(4px) !important;
+      border-radius: 10px !important;
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    }
+
+    .glassmorphism-parent {
+      border-radius: 10px;
+      backface-visibility: .1;
+      background: url(assets/images/glassmorphism-parent-v2.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .fw-400 {
+      font-weight: 400 !important;
+    }
+
+    .testimonial-section {
+      background-position: top;
+      background-size: cover;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(assets/visuals/homepage_digital_image.avif);
+    }
+  </style>
+  <style>
+    .card-img,
+    .img-cover,
+    .card-img-bottom,
+    .card-img-top {
+      width: auto;
+      height: 100%;
+      /* aspect-ratio: 1/1.5; */
+      object-fit: cover;
+    }
+
+    .ratio-1x1_2 {
+      aspect-ratio: 1/1.2;
+    }
+
+    .ratio-1x1_5 {
+      aspect-ratio: 1/1.5;
+    }
+
+    .ratio-1x1 {
+      aspect-ratio: 1/1;
+    }
+  </style>
+  <style>
+    .hero-section {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(assets/visuals/index-first.avif);
+    }
+
+    .testimonial-section {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(assets/visuals/homepage_digital_image.avif);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-default navbar-fixed-top" role="navigation">
+        <div class="container"><a class="navbar-brand page-scroll fs-6" href="index.html">
+            <img alt="undefined" type="image" src="assets/logos/logo-white.png" class="logo-white" height="45px">
+            <img loading="lazy" alt="undefined" type="image" src="assets/logos/logo-black.png" class="logo-black" height="45px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto"></ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+              <li class="nav-item dropdwon">
+                <a class="nav-link page-scroll d-lg-none" href="product.html">By&NonBreakingSpace;Products</a>
+                <a class="nav-link dropdown-toggle d-none d-lg-block" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">By&NonBreakingSpace;Products</a>
+                <div class="dropdown-menu img-fluid p-3 mx-1 glue-card" style="left: 0px; width: -webkit-fill-available;" aria-labelledby="navbarDropdownMenuLink">
+                  <div class="accordion-block">
+                    <div id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="row g-3">
+                        <div class="col-auto">
+                          <ul class="nav nav-tabs md-tabs d-block b-none">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-bs-toggle="tab" href="#enterprise-resource-planning" role="tab">Enterprise Resource Planning</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#customer-relationship-management" role="tab">Customer Relationship Management</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#human-resource-management" role="tab">Human Resource Management</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#supply-chain-tools" role="tab">Supply Chain Tools</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#manufacturing-and-quality" role="tab">Manufacturing And Quality</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#projects-process-management" role="tab">Projects & Process Management</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#collaboration-productivity-tools" role="tab">Collaboration & Productivity Tools</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#document-management-systems" role="tab">Document Management Systems</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#reports-and-analytics" role="tab">Reports And Analytics</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#business-lifecycles" role="tab">Business Lifecycles</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#industry-4O" role="tab">Industry 4.O</a>
+                              <div class="slide"></div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-bs-toggle="tab" href="#digital-security" role="tab">Digital Security</a>
+                              <div class="slide"></div>
+                            </li>
+                          </ul>
+                          <a href="product.html">
+                            <h6 class="mt-3 text-capitalize">ALL Products</h6>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <div class="tab-content tabs-left-content rounded">
+                            <div class="tab-pane active" id="enterprise-resource-planning" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/gate-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="gate.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Gate</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Visitor and Material Management at Entry points. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/accounts-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="ledgers.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Ledgers</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Accounts, Finance Stock Ledgers for your business. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/buying-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="procure-to-pay.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Purchase</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Purchase documentation for all branches.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/GRN-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="procure-to-pay.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">GRN</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Map all received goods and Status location wise. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/inventory-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="inventory-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Inventory</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Stocks, Warehouses, WIP Inventory, Barcodes More. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/invoice-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="invoicing.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Invoicing</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Domestic and Export Documentation with Sales orders.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/dispatch-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="order-to-cash.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Dispatch</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Packaging and Dispatch planning functionalities. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/analytics-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="reporting-&-bi-analytics.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Reports</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Advanced MIS automation tools with dashboards.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/AssureBooks.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="landing-Pages_Assurebooks/landingpage/assurebooks.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">AssureBooks</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Standalone Book keeping & Accounting for your SME. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/workflow-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="Watall-landing-page.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Vorkflo</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Customisable On-Prem ERP Solutions for your business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="customer-relationship-management" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/crm-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="customer-relation-mangement.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">CRM</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Simplified Customer Relationship for your Sales Team.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/contract-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="contract.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Contract</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Centralized Contract Management tools</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/sales-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="customer-relation-mangement.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Marketing</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Outbound Marketing Planning Management.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/audit-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="survey.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Survey</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Feedbacks, Q&amp;A, Votes and so much more.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/support-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="support-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Service Desk</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Optimized customer support ticketing.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="human-resource-management" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/HR-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="human-resource-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">HR</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">A robust HRMS suite for your Teams.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/self-service-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="self-services.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Self Service</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Simplified self services to empower your team.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/b2b-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="recruitment.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Recruitment</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Hiring and Prospect Management made simple.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/identity-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="attendance.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Attendance</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Snap Attendance for your enterprise.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/learning-wt-clr'.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="learning-managemnet.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Training</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">A featured LMS with training calendars planning. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/payroll-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="payroll-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Payroll</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Templated and compliant payroll structuring.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/performance-managment-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="performance-tools.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Performance</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">An appraisal and increment management tool.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="supply-chain-tools" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/procurement-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="reverse-auction-and-rfq-tools.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Easeprocure</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Standalone Reverse Auction & Procure-to-Pay tool </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/logistic-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="logistics-quotation-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">LogBids</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Standalone logistics Quotation Management System. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/transport-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="fleet-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Fleet</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Optimise your Fleet Management Lifecycle</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="manufacturing-and-quality" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/planning-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="production-scheduling.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Planning</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Planning and Scheduling for your manufacturing business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/production4-tools-w-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="intermediate-goods.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Intermediate Goods</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Intermediate production supply management.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/production-tool-w-clrt.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="manufacturing-and-quality.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Production</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Recipe, MRP &amp; Execution Tools for your business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/customisation-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="maintainence.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Maintainence</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Tools for Equipment/ Asset Management &amp; Upkeep.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/production3-tools-w-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="production-scheduling.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Production Scheduling</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Production Scheduling- Streamline your production scheduling and Plant better</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/chemicals-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="quality-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Quality Control</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">RM and FG Quality Check &amp; Test Reports.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="projects-process-management" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/projects-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="project-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Projects</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Robust &amp; Simplified Project Management</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/R&D-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="innovation.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Innovation</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Laboratory and Experiment Management.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row g-2">
+                                  <div class="col-auto">
+                                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/subscription-clrw.avif" class="rounded" height="50" />
+                                  </div>
+                                  <div class="col">
+                                    <a href="subscription.html" class="text-decoration-none text-black">
+                                      <h1 class="fw-bold text-capitalize">Subscriptions</h1>
+                                    </a>
+                                    <p class="text-capitalize mt-1">Automated Subscriptions Management &amp; Reminders. </p>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/IT-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="it-desk.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">IT Support</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">IT Service Desk for your business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="collaboration-productivity-tools" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/collaboration-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="collaboration.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Collaboration</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">A Captive, neo-gen social network for your business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/calendar-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="calendar.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Calendar</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Integrated Calendar Management for your business. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/story-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="notes.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Notes</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Integrated Reminder and Notification tool for your business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/chatting2-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="collaboration-productivity.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Toqqr</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Integrated Communication channel for your business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="document-management-systems" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/documents-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="document-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Rackdocs</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">A folder based central Document repository for your business.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="reports-and-analytics" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/analytics-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="reporting-&-bi-analytics.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Reports</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Bird eye view of your business functions.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/forecast-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="forecast.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Forecast</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Sales and Pricing Forecast solutions.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/bi-wt.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="reporting-&-bi-analytics.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Watall BI</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Custom Tailored Reporting & data consolidation. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="business-lifecycles" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/payment-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="landing-Pages_Assurebooks/landingpage/assurebooks.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Accounting</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">End to End Accounting Solution for businesses</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/erp-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="enterprise-resource-planning.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">ERP</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Robust and integrated ERP lifecycle management</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/ecommerce-clrw.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="reverse-auction-and-rfq-tools.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Sourcing</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Sourcing Tools to help your business negotiate better</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/procurement-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="procure-to-pay.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Procure to Pay</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Easy and comprehensive Procure to Pay management </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/store-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="inventory-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Materials</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">A robust Material Management solution for your businesss</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/production4-tools-w-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="manufacturing-and-quality.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Manufacturing</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">A robust Manufacturing Automation solution for businesses</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/QR-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="order-to-cash.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Order To Cash</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">End to End Order to Cash management for businesses </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/support-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="customer-relation-mangement.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Sales</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Lead to Customer conversion and sales lifecycle management</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/teams-wt-clr.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="human-resource-management.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">People</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">Comprehensive people management solutions for businesses</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="industry-4O" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/1mxg.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="1mxg.com" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">1MXG</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">A Dashboard based, interactive industry 4.0 solution</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="digital-security" role="tabpanel">
+                              <div class="row row-cols-lg-3 g-3">
+                                <div class="col">
+                                  <div class="row g-2">
+                                    <div class="col-auto">
+                                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/Protekt365.avif" class="rounded" height="50" />
+                                    </div>
+                                    <div class="col">
+                                      <a href="protekt365.html" class="text-decoration-none text-black">
+                                        <h1 class="fw-bold text-capitalize">Protekt 365</h1>
+                                      </a>
+                                      <p class="text-capitalize mt-1">An application based Security solution for growing businesses</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="by-solution.html">By&NonBreakingSpace;Solution</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> By&NonBreakingSpace;Industry </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="chemical-pharma-dye-industry.html">Chemical, Dyes & Pharma</a>
+                  <a class="dropdown-item" href="automobile-industry.html">Automobiles & EV</a>
+                  <a class="dropdown-item" href="service-industry.html">Service</a>
+                  <a class="dropdown-item" href="travel-and-hospitality.html">Travel & Hospitality</a>
+                  <a class="dropdown-item" href="food-n-beverage.html">Food & Beverage</a>
+                  <a class="dropdown-item" href="food-n-beverage.html">Manufacturing</a>
+                  <a class="dropdown-item" href="education.html">Education</a>
+                  <a class="dropdown-item" href="healthcare.html">Healthcare</a>
+                  <a class="dropdown-item" href="retail-industry.html">Retail Industry</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="advantages.html">Advantages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!"><button class="btn btn-cus-primary fw-bold m-0 mx-2 px-2 py-0 b-sharp">Contact&NonBreakingSpace;Sales</button></a>
+              </li>
+              <li class="nav-item">
+                <a href="#!"><button class="btn btn-cus-primary fw-bold m-0 mx-2 px-2 py-0 b-sharp">Sign&NonBreakingSpace;Up&NonBreakingSpace;for&NonBreakingSpace;Free</button></a>
+              </li>
+              <li class="nav-item d-none">
+                <a class="btn btn-white m-0 mx-2 px-2 py-0 bg-cus-primary b-sharp" href="#!">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main" id="main">
+      <!-- Main Section-->
+      <div class="hero-section py-5">
+        <div class="container pb-0 pt-3">
+          <div class="pt-0 pt-lg-5 pb-0 text-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 py-5 blog-styling">
+                <h3 class="wow fadeInUp m-0 text-white mt-lg-5">EASY, CLOUD BASED</h3>
+                <h3 class="wow fadeInUp m-0 text-white">SOFTWARE TO DO</h3>
+                <h3 class="wow fadeInUp m-0 fw-bold text-white text-cus-primary mb-4">BETTER BUSINESS!</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services-section text-center pb-5 bg-white">
+        <!-- Services section (small) with icons -->
+        <div class="container pb-5">
+          <div class="row  justify-content-center">
+            <div class="col-md-10 mb-5">
+              <div class="services-content pb-0">
+                <h2 class="wow fadeInUp pb-0 pw-bold mb-3" style="font-size: 45px;"> One Sign-up, Infinite Possibilities.</h2>
+                <h2 class="fw-bold text-black h4 mb-3 wow fadeInUp">Get Access to a wide range of Enterprise-Grade Products.</h2>
+                <p class="wow fadeInUp">Multi-Industry solutions under one roof. Witness the world of growth and scalability for your business . Choose a product or, solution for your industry and run your business better.</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row row-cols-md-10 justify-content-center ">
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 b-rounded fw-bold" href="enterprise-resource-planning.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/erp-wt-clr.avif" class="rounded" height="50px"><br> ERP</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="customer-relation-mangement.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/crm-clrw.avif" class="rounded" height="50px"><br> CRM</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="human-resource-management.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/HR-clrw.avif" class="rounded" height="50px"><br> HRMS</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="procure-to-pay.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/buying-wt-clr.avif" class="rounded" height="50px"><br> Purchase</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="logistics-quotation-management.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/transport-wt-clr.avif" class="rounded" height="50px"><br> Logistics</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="manufacturing-and-quality.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/production-tool-wt.avif" class="rounded" height="50px"><br> MFG</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="project-management.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/projects-wt-clr.avif" class="rounded" height="50px"><br> Projects</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="collaboration-productivity.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/toqqr-wt-clr.avif  " class="rounded" height="50px"><br> Collab</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="document-management.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/documents-clrw.avif" class="rounded" height="50px"><br> Docs</a>
+                </div>
+                <div class="col  mb-2 mb-lg-0 wow fadeInUp">
+                  <a class="btn btn-black fs-7 px-2 py-0 pt-1 b-rounded fw-bold" href="reporting-&-bi-analytics.html">
+                    <img loading="lazy" alt="undefined" type="image" src="assets/visuals/analytics-wt-clr.avif" class="rounded" height="50px"><br> Analytics</a>
+                </div>
+                <div class="col-12 wow fadeInUp pt-lg-5">
+                  <a class="mt-2 btn btn-cus-primary b-rounded fw-bold" href="product.html">Explore all Products</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="services-section text-center pb-5" id="solution">
+        <!-- Services section (small) with icons -->
+        <div class="container pb-5">
+          <div class="row  justify-content-center">
+            <div class="col-md-8 mb-5">
+              <div class="services-content pb-0">
+                <h1 class="wow fadeInUp pb-md-5 pw-bold" style="font-size: 45px;">What we offer? </h1>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/4.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/4.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Enterprise Resource Planning</h1>
+                          <p class="fs-6 text-start">Accounting, Sales, Purchase, Customer Management & Resource Planning </p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="enterprise-resource-planning.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/7.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/7.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Material Requsition & Planning</h1>
+                          <p class="fs-6 text-start">Manage BOM-BOQ, Production Planning and shopfloor on the go</p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="manufacturing-and-quality.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/5.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/5.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Customer Relationship Mangement</h1>
+                          <p class="fs-6 text-start">Manage Targets, Sales Teams, Leads and Conversions on your fingertips. </p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="customer-relation-mangement.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/8.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/8.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Project Management </h1>
+                          <p class="fs-6 text-start">System based Project management based on Milestones, tasks & Sub-Tasks </p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="project-management.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/6.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/6.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Human Resources Management</h1>
+                          <p class="fs-6 text-start">Manage your workforce, leaves, loans and Payroll simplistically.</p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="human-resource-management.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/9.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Reporting & BI Analytics</h1>
+                          <p class="fs-6 text-start">Get access to state of the art reporting, dashboard and Analytics.</p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="reporting-&-bi-analytics.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/10.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Procure-to-Pay & RFQ Tools</h1>
+                          <p class="fs-6 text-start">Standalone Tool for RFQ, Reverse Auctions & Procure to Pay Management </p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="reverse-auction-and-rfq-tools.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/13.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/13.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Payroll Management </h1>
+                          <p class="fs-6 text-start">Manage Templated Payroll and Self Service Portals for Businesses of all sizes</p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="payroll-management.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/11.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/11.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Document Management </h1>
+                          <p class="fs-6 text-start">A Central, Folder based, Mutli-Branch, Document Management System.</p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="document-management.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/14.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/14.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Accounts & Bookkeeping</h1>
+                          <p class="fs-6 text-start">A simple interface to Manage Accounts, Sales, Purchases & Transactions </p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="online-accounting-for-smes.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/12.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/12.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Logistics Quotation Management</h1>
+                          <p class="fs-6 text-start">Fetch Quotes for trucks and Import Export Shipments through multiple Vendors.</p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="logistics-quotation-management.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-6 mb-4 wow fadeInUp d-flex align-content-stretch">
+              <div class="card col-12">
+                <div class="card-body">
+                  <div class="row" style="height: 100%;">
+                    <div class="col-12 col-sm-4">
+                      <div class="ratio ratio-4x3">
+                        <img loading="lazy" alt="" type="image" src="assets/visuals/15.avif" class="col-12 rounded" style="object-fit: cover;">
+                      </div>
+                    </div>
+                    <!-- assets/images/15.png -->
+                    <div class="col-sm-8 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <h1 class="text-start pt-3 pt-sm-0 fw-bold fs-5 mb-2">Identity Management </h1>
+                          <p class="fs-6 text-start">A powerful, Single-Sign-On tool to manage multiple Sign-ins with a single login interface.</p>
+                        </div>
+                        <div class="col-12">
+                          <a class="mt-2 btn px-2 py-0 rounded-circle cus-fade-in-out" href="identity-management.html"><span class="parent_hover-show me-2 fw-bold">Know More</span><i class="ion-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 wow fadeInUp">
+              <a class="mt-5 btn btn-cus-primary b-rounded fw-bold" href="by-solution.html">Explore all Solutions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-section py-5" id="reviews">
+        <div class="container my-5">
+          <div class="row text-center justify-content-center">
+            <div class="col-md-8">
+              <h1 class="m-0 fs-1 text-white wow fadeInUp"> We are the <b class="fw-bold">Digital Transformation Partner</b> your business has been looking for! </h1>
+              <a class="mt-5 btn btn-cus-primary b-rounded fw-bold wow fade-in" href="product.html">Explore Our Solutions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature_huge text-center bg-black">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 pb-3">
+              <h1 class="fs-1 fw-bold wow fadeInUp">How we work?</h1>
+            </div>
+            <div class="col-md-12 feature_list">
+              <div class="row">
+                <div class="col-sm-4 mb-5 mb-sm-0 wow fadeInUp">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/images/On Cloud.png" class="img-fluid" />
+                  <h1 class="fs-3 text-white">ON-CLOUD</h1>
+                  <p class="text-white px-lg-5"> SaaS based offering readily available for your business. </p>
+                  <a class="btn btn-cus-primary b-rounded fw-bold wow fade-in" href="#!">Know More<i class="ms-3 ion-chevron-right"></i></a>
+                </div>
+                <div class="col-sm-4 mb-5 mb-sm-0 wow fadeInUp">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/images/Custom Cloud.png" class="img-fluid" />
+                  <h1 class="fs-3 text-white">CUSTOM CLOUD</h1>
+                  <p class="text-white px-lg-5"> Customised and deployed on a secure, private instance. </p>
+                  <a class="btn btn-cus-primary b-rounded fw-bold wow fade-in" href="#!">Know More<i class="ms-3 ion-chevron-right"></i></a>
+                </div>
+                <div class="col-sm-4 mb-5 mb-sm-0 wow fadeInUp">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/images/On Prem.png" class="img-fluid" />
+                  <h1 class="fs-3 text-white">ON-PREM/HYBRID</h1>
+                  <p class="text-white px-lg-5"> Deployed on premise or on Hybrid cloud for your business. </p>
+                  <a class="btn btn-cus-primary b-rounded fw-bold wow fade-in" href="#!">Know More<i class="ms-3 ion-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-features p-0 bg-white" id="features">
+        <div class="row gx-0 align-items-center pe-lg-4">
+          <div class="col-lg-7"><img loading="lazy" alt="undefined" type="image" src="assets/visuals/homepage_work_from_section.avif" class="img-fluid"></div>
+          <div class="col-lg-5 ps-3 ps-lg-5 pb-5 pb-lg-0 pt-2 pt-lg-0">
+            <h1 class="h1 fw-bold mb-0 text-danger">Work from Office.</h1>
+            <h1 class="h1 fw-bold mb-0 text-success">Work from Home.</h1>
+            <h1 class="h1 fw-bold mb-4 pb-1 text-black text-decoration-underline">Work from Anywhere.</h1>
+            <h2 class="h4 fw-bold">Simple, Smart and Straightforward <b class="fw-bold text-info">software</b> to uncomplicate and <b class="fw-bold text-info">Manage your business</b> better.</h2>
+            <div class="card rounded-pill mt-5 box-shadow-hover-none">
+              <div class="card-body p-2">
+                <div class="row gx-3">
+                  <div class="col wow fadeInRight">
+                    <input type="text" class="form-control text-start b-none m-0 ps-3 rounded-pill" placeholder="Mobile Number">
+                  </div>
+                  <div class="col-auto wow fade-in">
+                    <a class="btn btn-cus-primary rounded-pill px-4 fw-bold text-uppercase" href="#!">Sign up for free</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-0 align-items-center pe-lg-4 d-none">
+          <div class="col-lg-7"><img loading="lazy" alt="undefined" type="image" src="assets/visuals/16.avif" class="img-fluid"></div>
+          <div class="col-lg-5 ps-lg-5 pb-5 pb-lg-0 ps-3 ps-lg-0 pt-2 pt-lg-0 pe-lg-5">
+            <h1 class="fs-1 fw-bold wow fadeInUp mb-3 text-uppercase">Work from ... </h1>
+            <h1 class="fs-1 fw-bold wow fadeInUp mb-4 text-end">Office</h1>
+            <h1 class="fs-1 fw-bold wow fadeInUp mb-4 text-center">Home</h1>
+            <h1 class="fs-1 fw-bold wow fadeInUp mb-4">Anywhere</h1>
+            <div class="card rounded-pill mt-5 box-shadow-hover-none">
+              <div class="card-body p-2">
+                <div class="row gx-3">
+                  <div class="col wow fadeInRight">
+                    <input type="text" class="form-control text-start b-none m-0 ps-3 rounded-pill" placeholder="Mobile Number">
+                  </div>
+                  <div class="col-auto wow fade-in">
+                    <a class="btn btn-cus-primary fw-bold rounded-pill px-4" href="#!">Sign up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="industries" class="bg-white about-area-3 about-area-bg-3 industries-served py-5">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-8 col-lg-6">
+              <div class="section-title text-center wow fadeInUp">
+                <h3 class="title h1 fw-bold text-black">Industries Served</h3>
+                <p class="fs-6 text-black mb-5"> The multi-industry portfolio of the solutions enables the solutions to be used by diverse and unrelated indutsries. Get in touch if you're from the following industries. We're adding more. </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-10 wow fadeInUp">
+              <div class="row  justify-content-center g-3 row-cols-2 row-cols-sm-3 g-md-4 row-cols-md-4 g-lg-3 row-cols-lg-5">
+                <div class="col text-center wow fadeInUp">
+                  <a href="#!" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/service-providers.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Service Providers</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="chemical-pharma-dye-industry.html" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/dyes-and-additives-manufacturers.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Dyes & Additives</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="automobile-industry.html" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/automobiles-and-EV-manufacturers.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Automobiles & EV</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="#!" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/travel-and-hospitality.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Travel & Hospitality</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="retail-industry.html" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/retail-and-storefronts.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Retail & Storefronts</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="food-n-beverage.html" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/food-and-beverages.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Food & Beverages</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="chemical-pharma-dye-industry.html" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/chemical-manufacturers.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Chemical</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="manufacturing-and-quality.html" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/process-manufacturers.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Manufacturing</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="chemical-pharma-dye-industry.html" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/pharma-manufacturers.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Pharma</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col text-center wow fadeInUp">
+                  <a href="#!" class="text-decoration-none btn btn-black">
+                    <div class="service-icon">
+                      <img loading="lazy" alt="undefined" type="image" src="assets/visuals/education-management.avif" class="px-2">
+                    </div>
+                    <div class="services-content p-0">
+                      <p class="text-black fs-6 fw-400">Education</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center mt-5">
+              <a class="btn btn-cus-primary b-rounded fw-bold wow fade-in" href="#!">Know More<i class="ms-3 ion-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="flex-features bg-black" id="features">
+        <div class="container">
+          <div class="flex-split bg-black">
+            <div class="f-left bg-black wow fadeInUp">
+              <div class="left-content">
+                <img loading="lazy" alt="undefined" type="image" class="img-fluid rounded" src="assets/visuals/app-development.avif" />
+              </div>
+            </div>
+            <div class="f-right bg-black wow fadeInUp">
+              <div class="right-content">
+                <h2 class="text-white">Customisation & Portal/ App Development solutions</h2>
+                <p class="text-light"> All tools and interfaces are customisable and can take your custom workflows into consideration. </p>
+                <p class="text-light"> Beyond this, if you're looking for customised software solutions exclusive to your business, we're here for you. </p>
+                <button class="btn btn-cus-primary fw-bold me-3 fw-bold">Go to Watall</button>
+                <button class="btn btn-cus-primary fw-bold b-sharp">Get Quotes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="industries" class="bg-white about-area-3 about-area-bg-3 industries-served py-5">
+        <div class="container pb-5">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="section-title text-center">
+                <h3 class="title h1 fw-bold py-5">Our Customers</h3>
+              </div>
+            </div>
+          </div>
+          <div class="client-section">
+            <div class="container-fluid text-center bg-white">
+              <div class="clients owl-carousel owl-theme bg-white">
+                <div class="single">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/visuals/logo1.avif" class="rounded-circle">
+                </div>
+                <div class="single">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/visuals/logo2.avif" class="rounded-circle">
+                </div>
+                <div class="single">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/visuals/logo3.avif" class="rounded-circle">
+                </div>
+                <div class="single">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/visuals/logo4.avif" class="rounded-circle">
+                </div>
+                <div class="single">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/visuals/logo6.avif" class="rounded-circle">
+                </div>
+                <div class="single">
+                  <img loading="lazy" alt="undefined" type="image" src="assets/visuals/logo7.avif" class="rounded-circle">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="flex-features p-0 bg-white" id="features" style="margin-top: -2px;">
+        <div class="row g-0 justify-content-center align-items-center">
+          <div class="col-lg-6 p-5">
+            <h1 class="fs-1 fw-bold mb-3 wow fadeInUp">Get in Touch</h1>
+            <p class="mb-4 wow fadeInUp">The Watall collaboration & productivity suite enables your organization to manage internal collaboration and correspondences so that teams are on the same page, literally! Get in touch to know the limitless possibilities of Collaboration solutions from Taskay for your enterprise.</p>
+            <form class="row g-3 form-control-shodow wow fadeInUp">
+              <div class="col-lg-12 wow fadeInUp">
+                <input type="text" class="form-control rounded m-0" placeholder="Name">
+              </div>
+              <div class="col-lg-12 wow fadeInUp">
+                <input type="text" class="form-control rounded m-0" placeholder="Company Name">
+              </div>
+              <div class="col-lg-6 wow fadeInUp">
+                <input type="email" class="form-control rounded m-0" placeholder="Email">
+              </div>
+              <div class="col-lg-6 wow fadeInUp">
+                <input type="text" class="form-control rounded m-0" placeholder="Mobile No">
+              </div>
+              <div class="col-lg-12 wow fadeInUp">
+                <textarea type="text" rows="3" class="form-control rounded m-0" placeholder="Message"></textarea>
+              </div>
+              <div class="col-lg wow fadeInUp">
+                <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdBP2siAAAAADj94Py_2FI3pF-_RCfFTM5Qwzxr">
+                  <div style="width: 304px; height: 78px;">
+                    <iframe class="reCAPTCHA" title="reCAPTCHA" name="a-tt47xnupymp8" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LdBP2siAAAAADj94Py_2FI3pF-_RCfFTM5Qwzxr&amp;co=aHR0cHM6Ly90YXNrc2F5LmNvbTo0NDM.&amp;hl=en&amp;v=QoukH5jSO3sKFzVEA7Vc8VgC&amp;size=normal&amp;cb=jlntenbqd24o"></iframe>
+                    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                  </div>
+                </div>
+                <p class="form-message m-0"></p>
+              </div>
+              <div class="col-12 wow fadeInUp">
+                <button class="btn btn-cus-primary wow fadeInUp fw-bold text-capitalize">Book an appointment</button>
+              </div>
+            </form>
+            <div class="success-message"></div>
+            <div class="error-message"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row gx-0">
+              <div class="col-6 col-lg-12">
+                <img loading="lazy" alt="undefined" type="image" src="assets/visuals/homepage_footer_Section_one.avif" class="img-fluid" style="margin: -2px 0px;">
+              </div>
+              <div class="col-6 col-lg-12">
+                <img loading="lazy" alt="undefined" type="image" src="assets/visuals/homepage_footer_Section_two.avif" class="img-fluid" style="margin: -2px 0px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer p-4 bg-black">
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-lg-2 col-sm-6">
+              <div class="footer-link">
+                <h6 class="footer-title wow fade-in">Company</h6>
+                <ul>
+                  <li class="wow fadeInUp"><a href="https://lynkersoft.com" target="_blank">About</a></li>
+                  <li class="wow fadeInUp"><a href="https://1mxg.com/" target="_blank">Services</a>
+                  </li>
+                </ul>
+              </div>
+              <hr class="d-md-none mb-4">
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="footer-link">
+                <h6 class="footer-title wow fade-in">Solutions</h6>
+                <ul>
+                  <li class="wow fadeInUp"><a href="enterprise-resource-planning.html" target="_blank">Enterprise Resource Planning</a></li>
+                  <li class="wow fadeInUp"><a href="human-resource-management.html" target="_blank">Human Resource Management</a></li>
+                  <li class="wow fadeInUp"><a href="project-management.html" target="_blank">Projects &amp; Process Management</a></li>
+                  <li class="wow fadeInUp"><a href="collaboration-productivity.html" target="_blank">Collaboration &amp; Productivity</a></li>
+                  <li class="wow fadeInUp"><a href="customer-relation-mangement.html" target="_blank">Customer Relationship Management</a></li>
+                  <li class="wow fadeInUp"><a href="manufacturing-and-quality.html" target="_blank">Manufacturing and Quality</a></li>
+                  <li class="wow fadeInUp"><a href="reporting-&-bi-analytics.html" target="_blank">Reports and Analytics</a></li>
+                </ul>
+              </div>
+              <hr class="d-md-none mb-4">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-link">
+                <h6 class="footer-title wow fade-in">Products</h6>
+                <ul>
+                  <li class="wow fadeInUp"><a href="logistics-quotation-management.html" target="_blank">LogBids</a></li>
+                  <li class="wow fadeInUp"><a href="reverse-auction-and-rfq-tools.html" target="_blank">Easeprocure</a></li>
+                  <li class="wow fadeInUp"><a href="landing-Pages_Assurebooks/landingpage/assurebooks.html" target="_blank">AssureBooks</a></li>
+                  <li class="wow fadeInUp"><a href="#!" target="_blank">1MXG</a></li>
+                </ul>
+              </div>
+              <hr class="d-md-none mb-4">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-link">
+                <h6 class="footer-title wow fade-in">Help &amp; Support</h6>
+                <ul>
+                  <li class="wow fadeInUp mb-2"><a href="faq.html" target="_blank">FAQ</a></li>
+                  <li class="wow fadeInUp mb-2"><a href="reseller-and-partner-program.html" target="_blank">Reseller & Partner Program</a></li>
+                  <li class="wow fadeInUp mb-2"><a href="third-party-integration.html" target="_blank">Third Party Integrations</a></li>
+                  <li class="wow fadeInUp mb-5"><a href="modes-of-deployment.html" target="_blank">Modes of Deployment</a></li>
+                  <li class="wow fadeInUp"><a href="tel:+0129" target="_blank"><i class="ion-android-call me-2"></i>+000 000 000 0000</a></li>
+                  <li class="wow fadeInUp"><a href="mailto:a2z@email.com" target="_blank"><i class="ion-android-mail me-2"></i>Abcxyz@email.com</a></li>
+                </ul>
+              </div>
+              <hr class="d-md-none mb-4">
+            </div>
+            <div class="col-lg-12 mt-5 pt-5 mb-2 align-items-center text-center footer-social wow fade-in">
+              <a lass="fs-5 px-1 wow fade-in" href="https://www.facebook.com/Crest-Tech-Solutions-1398548697120348" target="_blank" aria-labelledby="Facebook or X account of Vorkflo"><i class="ion-social-facebook"></i></a>
+              <a class="fs-5 px-1 wow fade-in" href="https://twitter.com/lynkersoft" target="_blank" aria-labelledby="Twitter or X account of Vorkflo"><i class="ion-social-twitter"></i></a>
+              <a class="fs-5 px-1 wow fade-in" href="https://in.linkedin.com/company/lynkersoft-solutions" target="_blank" aria-labelledby="linkedin account of Vorkflo"><i class="ion-social-linkedin"></i></a>
+            </div>
+            <div class="col-md-12 text-center wow fade-in">
+              <ul class="footer-menu">
+                <li class="wow fade-in"><a href="#!" class="text-capitalize ">Terms & Conditions</a></li>
+                <li class="wow fade-in"><a href="#!" class="text-capitalize ">Privacy</a></li>
+                <li class="wow fade-in"><a href="#!" class="text-capitalize ">Cancellation</a></li>
+              </ul>
+              <div class="footer-text wow fade-in">
+                <p class="mt-0 wow fadeInUp fw-bold"> Powerd By <a href="#!" class="text-decoration-none text-white fw-bold">Watall</a> - A <a href="#!" class="text-decoration-none text-white fw-bold">Lynkersoft</a> Product. All rights reserved. © Copyright
+                  <script>document.write(new Date().getFullYear())</script>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Scroll To Top -->
+      <button id="back-top" class="ion-arrow-up-c back-to-top page-scroll btn btn-cus-primary" href="#main" aria-labelledby="labeldiv"></button>
+    </div>
+    <!-- Main Section -->
+  </div>
+  <!-- Wrapper-->
+  <!-- Jquery and Js Plugins -->
+  <script async type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+  <script async type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script async type="text/javascript" src="assets/js/plugins.js"></script>
+  <script async type="text/javascript" src="assets/js/menu.js"></script>
+  <script async type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+
+</html>
